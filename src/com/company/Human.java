@@ -29,7 +29,7 @@ public class Human implements HumanInterface {
         }
 
     }
-
+    //It is according to K factor.
     @Override
     public double canSpread() {
        double a=Math.random();
