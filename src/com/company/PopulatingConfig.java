@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class PopulatingConfig {
-
+    public static String virusName;
 
 
     public static Properties readProp(String fileName) throws IOException {

@@ -7,6 +7,7 @@ public class Human implements HumanInterface {
     boolean needQuarantine;
     boolean showSymptoms;
     boolean ifWearMask;
+    Virus v1=new Virus(PopulatingConfig.virusName);
 
     public void humanStatusUpdate() {
 
