@@ -3,11 +3,26 @@ package com.company;
 public class Human implements HumanInterface {
 
     Location l;
-    boolean isCovidPositive;
-    boolean needQuarantine;
-    boolean showSymptoms;
-    boolean ifWearMask;
+    boolean isCovidPositive=false;
+    boolean needQuarantine=false;
+    boolean showSymptoms=false;
+    boolean ifWearMask=false;
     Virus v1=new Virus(PopulatingConfig.virusName);
+    boolean isVisitingPublicPlaces;
+    String Country;
+
+    public Human(boolean isVisitingPublicPlaces)
+    {   if(isVisitingPublicPlaces)
+    {
+
+    }
+        if(Math.random()<0.5)
+        {
+            this.Country="USA";
+        }
+        else
+            this.Country="China";
+    }
 
     public void humanStatusUpdate() {
 
